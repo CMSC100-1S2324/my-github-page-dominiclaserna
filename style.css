@@ -1,0 +1,21 @@
+body{
+	background:url("dog.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+span{
+	color:aqua;
+}
+.flex-container{
+	display:flex;
+	flex-direction: row;
+/*horizontal	*/
+	justify-content:space-evenly;
+/*vertical	*/
+	align-items: space evenly; 
+
+	background-color: orange;
+}
+.flex-item{
+	flex:auto;
+	border:1px solid #000;
+}
