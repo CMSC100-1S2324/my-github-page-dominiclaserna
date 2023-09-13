@@ -2,22 +2,108 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css"> 
-		<title>My First Webpage</title>
+		<title>Laserna Portfolio</title>
 	<body>
+	<!-- For the navigation bar, links are nonfunctional -->
+		<div class="topnav">
+			<img src = "pagcor.jpeg" height= 99px>
+  			<a class="flex-item" href="#home">Home</a>
+  			<a class="flex-item"href="#news">News</a>
+  			<a class="flex-item"href="#contact">Contact</a>
+  			<a class="flex-item"href="#about">About</a>
+		</div>
+		<br>
+		<!-- for the profile picture -->
+		<div class="center">
+			<img src = "me.jpg" height = 300px>
+		</div>
+		<br>
+		<!-- for the prev projects section -->
+		<div class = "center">
+			<h3>Previous Projects
+		</div>
 		<div class="flex-container">
 			<div class="flex-item">
-				<h1>Title 1 </h1>
-				<p>This is the description of this title</p>
+				<img src = "com1.png" height = 200px width= 221px>
+				<img src = "com2.png" height = 200px width= 221px>
 			</div>
 			<div class="flex-item">
-				<h1>Title 2 </h1>
-				<p>This is the description of this title</p>
+				<img src = "com4.png" height = 200px width= 221px>
+				<img src = "web5.jpeg" height = 200px width= 221px>
 			</div>
 			<div class="flex-item" style="flex:auto">
-				<h1>Title 3 </h1>
-				<p>This is the description of this title</p>
+				<img src = "web6.png" height = 200px width= 221px>
+				<img src = "web7.png" height = 200px width= 221px>
 			</div>
 		</div>
+		<!-- for the skills and autobiography section -->
+		<div class="flex-container">
+			<div class="flex-item1">
+				<h3 class="center">Skills
+			</div>
+			<div class="flex-item1">
+				<h3 class="center">Autobiography
+			</div>
+		</div>
+		<div class="flex-container">
+			<div class="flex-item">
+				<h4 class="center">Proficient in Java
+				<h4 class="center">Proficient in Python
+				<h4 class="center">Works well under pressure
+				<h4 class="center">Great communication skills
+				<h4 class="center">Great time-management
+			</div>
+			<div class="flex-item">
+				<h4 class="center">I am Luis Dominic B. Laserna
+				<h4 class="center">I am currently 22 years old
+				<h4 class="center">My mother is Debbie Laserna
+				<h4 class="center">My father is Jojo Laserna
+				<h4 class="center">I am currently residing in Calamba
+			</div>
+		</div>
+		<br>
+		<!-- button for unhiding footer -->
+		<button onclick="myFunction()">Unhide Footer</button>
+		<div id="footer">
+			<div class="flex-container1">
+  				<img src = "pagcor.jpeg" width="10%">
+  				<div class="flex-item1">
+  					<!-- button for hiding footer -->
+  				<button onclick="myFunction()">Hide Footer</button>
+  				<p> Cellphone Number: 09157015668
+  				<p> Email Address : luisdominiclaserna@gmail.com</p>
+  				<a href="https://cmsc100-1s2324.github.io/my-github-page-dominiclaserna/">Personal Website</a>
+  				<!-- button for the go to top -->
+  				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  				</div>
+  			</div>	
+		</div>
+	<script>
+	//function for hiding or unhiding the footer
+	function myFunction() {
+	  var x = document.getElementById("footer");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	// function for showing the button to scroll back to top after scrolling down for a 20 px
+	function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    		mybutton.style.display = "block";
+  		}else {
+    		mybutton.style.display = "none";
+  			}
+		}
+//function for the button to scroll back to top
+	let mybutton = document.getElementById("myBtn");
+	window.onscroll = function() {scrollFunction()};
+	function topFunction() {
+  		document.body.scrollTop = 0; // For Safari
+  		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}	
+	</script>
 	</body>
 </html>
 
